@@ -77,6 +77,12 @@ module.exports = {
         },
       },
     ],
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-129657379-2' // UA-129657379-2
+      }
+    ]
   ],
   locales: {
     '/': {
