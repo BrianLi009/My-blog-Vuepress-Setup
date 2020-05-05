@@ -1,6 +1,6 @@
 module.exports = {
   "title": "Brian's Mathematics Blog",
-  "description": "Hi! This is my personal blog, which documents my passion and research in mathematics during my undergrad",
+  "description": "Hi! This is my personal blog, which documents my passion and research in mathematics. Feel free to reach out to me via brianli.li@mail.utoronto.ca",
   "dest": "public",
   "head": [
     [
