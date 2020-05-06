@@ -93,20 +93,21 @@ generate(3)
 Now we have successfully generated a Boolean function in a certain dimension, we can start investigate its influence for each bits. Here is my script to **calculate the influence when a specific bit is switched**:
 ```
 def calculate_influence(dict, bit):
-    """calculate influence when one bit is flipped, "dict" is the Boolean input"""
+    """calculate influence when one bit is flipped, "dict" is the Boolean Input"""
     count = 0
     total = 0
     for item in dict:
         original = dict[item]
         if item[bit]==0:
             item = edit_tuple(item, bit, 1)
-            total += 1
         else:
             item = edit_tuple(item, bit, 0)
         if dict[item] != original:
             count += 1
             total += 1
-    return count / total """return the probability, hence the influence"""
+        else:
+            total +=1
+    return count / total;  """return the probability/influence"""
 ```
 Let's try out this function by input a three dimensional Boolean function as our parameter and **investigate its influence at the 0th bits**:
 ```
@@ -148,11 +149,12 @@ def influence_plot():
     plt.xlabel('dimensions', fontsize=16)
     plt.show()
 ```
-<img src='https://i.ibb.co/xYJXNdn/plot.png' title='Total Influence vs. Input Dimensions'>
+<img src='https://i.ibb.co/M2hnrmL/1.png' title='Total Influence vs. Input Dimensions'>
 
 #### Observation
 Based on the output of our program and the plot, we can conclude that for a random Boolean function:
 
+ - At the very start, the points jump up and down due to the small sample size. Imagine flipping a coin 4 times, it is not guaranteed that 2 of them will be head.
  - $$\text{The influence of each bit is usually}\space 1/2.$$
  - $$ \text{The total influence is}\space 0.5n = 0.5 + 0.5 + ... + 0.5, \space \text{where n is the dimension of our input.}$$
 
@@ -175,12 +177,12 @@ def all_one_boolean_function(dim):
     return dict
 ```
 By using the same Python function as before, we can **plot the total influence vs. dimensions graph**:
-<img src='https://i.ibb.co/R9Q3r0f/plot.png' title='Total Influence vs. Input Dimensions'>
+<img src='https://i.ibb.co/q9zLk3m/1.png'  title='Total Influence vs. Input Dimensions'>
 
 #### Observation
 
  - Total Influence approaches 0 as dimensions approaches infinity, which makes sense since as dimension increases, the number of "unaffected" outcomes increase at a much faster rate than the number of "affected" outcomes.
- - The maximum total influence is 1, which happens for 2 dimensional and 3 dimensional input.
+ - The maximum total influence is 1, which happens for 1 dimensional and 2 dimensional input.
 
 
 ### Boolean Functions Example 3: Even or Odd?
@@ -205,12 +207,12 @@ def even_or_odd(dim):
     return dict
 ```
 By using the same Python function as before, we can **plot the total influence vs. dimensions graph**:
-<img src='https://i.ibb.co/tXs6BPw/plot.png' title='Total Influence vs. Input Dimensions'>
+<img src='https://i.ibb.co/mzf2F5H/1.png'  title='Total Influence vs. Input Dimensions'>
 
 #### Observation
 
  - We obtained a linear relationship that looks similar to example one at first glance. This means that the graph has a constant slope.
- - However, if we look at the y-axis, the total influence is increasing faster compared to example 1. Such observation makes sense since by changing any bits of the input, an even sum turns into an odd sum and vice versa. Therefore, any bit's changes will have influence on the output. If we calculate the slope of this graph, we get exactly 2/3. For now, we can not justify why 2/3 is the slope as further investigation is needed. I would encourage the readers to investigate on the "why" and "how" of this result as well.
+ - However, if we look at the y-axis, the total influence is increasing faster compared to example 1. Such observation makes sense since by changing any bits of the input, an even sum turns into an odd sum and vice versa. Therefore, any bit's changes will have influence on the output. If we calculate the slope of this graph, we get exactly 1. Since the slope also represents influence for each bit, we can conclude that the influence for each bit is 1 (100%). This means that there does not exist such a switch in our function that does not affect the output.
 
 ### Boolean Functions Example 4: Are the majority of the inputs one?
 For this example, if majority of the input is one, the output would be one. Otherwise the output would be 0, including the case where the number of ones and zeroes are equal. Here are some examples:
@@ -235,7 +237,7 @@ def majority_one(dim):
 ```
 
 By using the same Python function as before, we can **plot the total influence vs. dimensions graph**:
-<img src='https://i.ibb.co/9H3q9C6/plot.png' title='Total Influence vs. Input Dimensions'> 
+<img src='https://i.ibb.co/z8vWYMV/1.png' title='Total Influence vs. Input Dimensions'> 
 
 #### Observation
 
@@ -244,7 +246,7 @@ By using the same Python function as before, we can **plot the total influence v
 
  - The rate of increase for total influence gradually slows down as dimension increases, however, it does not approach any constant value.
 
- - There seems to be an oscillating behavior along the curve, it would be helpful if the reader can investigate and justify the oscillating behavior.
+ - As n increases, the total influence remains unchanged between every two dimensions. This interesting observation should be able to explained once we conduct some mathematical proof to produce an formula for our total influence in this case. It would be helpful if the reader can investigate and justify such behavior.
 
 ## Conclusion
 That is all for this week's post. We talked about what a Boolean function is and the definition of influence for a Boolean function. We investigated some examples of Boolean functions, plotted their influence and stated our observation. The advantage of our use of programming is that it allows us to generate our results quickly and utilize the visualization to conduct analysis. Nevertheless, the disadvantage would be the fact that it is hard to justify the shape of our curve and explain them in a mathematically sound manner. We hope in a later post, we will be able to justify and explain the curve of each examples with mathematics. Thanks for reading!
