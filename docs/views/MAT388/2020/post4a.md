@@ -39,9 +39,9 @@ A random permutation is a random ordering of a set of elements.
 
  - **Exactly one object is fixed**: After fixing one object, we have $n-1$ objects left to be permutated in $(n-1)!$ possible ways. Thus we have $n \cdot (n-1)! = n!$ number of ways to do so.
 
- - **Exactly two objects are fixed**: After fixing two objects in ${n}\choose{2}$ ways, we have $n-2$ objects left to be permutated in $(n-2)!$ possible ways. Thus we have ${{n}\choose{2}} \cdot(n-2)! = \frac{n!}{2!}$ number of ways to do so.
+ - **Exactly two objects are fixed**: After fixing two objects in ${n}\choose{2}$ ways, we have $n-2$ objects left to be permutated in $(n-2)!$ possible ways. Thus we have ${n \choose 2} \cdot (n-2)! = \frac{n!}{2}$ number of ways to do so.
  
- - **Exactly three objects are fixed**: After fixing three objects in ${n}\choose{3}$ ways, we have $n-2$ objects left to be permutated in $(n-3)!$ possible ways. Thus we have ${{n}\choose{3}} \cdot (n-3)! = \frac{n!}{3!}$ number of ways to do so
+ - **Exactly three objects are fixed**: After fixing three objects in ${n}\choose{3}$ ways, we have $n-2$ objects left to be permutated in $(n-3)!$ possible ways. Thus we have ${n \choose 3} \cdot (n-3)! = \frac{n!}{3}$ number of ways to do so
  
  - ... As all objects are fixed, we are left with only one way to accoplish that.
  

@@ -91,7 +91,7 @@ Due to properties of independent event:
 $$\mathbf{Inf}_i[f]=\mathop{\bf Pr}[x_{i}=1] \cdot \mathop{\bf Pr}[n_{1}-n_{0}=1]+\mathop{\bf Pr}[x_{i}=0] \cdot \mathop{\bf Pr}[n_{0}-n_{1}=1]$$
 It is interesting to note that case 1 and case 2 are symmetric with equal properties. Moreover, besides the ith digit that is flipped, the rest of the input has an even length and equal number of 0 and 1, thus: $\mathbf{Inf}_i[f]=2 \cdot \left(\frac{1}{2}\right) \cdot {\bf Pr}\left[n_{1}=n_{0}=\frac{n-1}{2}\right]$.
 
-To measure the probaility that there exists $\frac{n-1}{2}$ "0"s, we will use combination to express the total number of ways for that to happen: $\mathbf{Inf}_i[f]=2 \cdot \left[\left(\frac{1}{2}\right) \cdot \frac{{n-1\choose \frac{n-1}{2}}}{2^{n-1}}\right]$.
+To measure the probaility that there exists $\frac{n-1}{2}$ "0"s, we will use combination to express the total number of ways for that to happen: $\mathbf{Inf}_i[f]=2 \cdot \left[\left(\frac{1}{2}\right) \cdot \frac{{n-1\choose {\frac{n-1}{2}}}}{2^{n-1}}\right]$
 
 After simplifying, we obtain $\mathbf{Inf}_i[f]=\frac{{n-1\choose \frac{n-1}{2}}}{2^{n-1}}$.
 
