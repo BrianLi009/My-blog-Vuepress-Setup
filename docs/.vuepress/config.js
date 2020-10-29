@@ -1,5 +1,5 @@
 module.exports = {
-  "title": "Brian's Mathematics Blog",
+  "title": "Brian's Math Blog",
   "description": "Hi! This is my personal blog, which documents my passion and research in mathematics. Feel free to reach out to me via brianli.li@mail.utoronto.ca",
   "dest": "public",
   "head": [
@@ -22,14 +22,50 @@ module.exports = {
   "themeConfig": {
     "nav": [
       {
-        "text": "Home",
-        "link": "/",
-        "icon": "reco-home"
-      },
-      {
         "text": "TimeLine",
         "link": "/timeline/",
         "icon": "reco-date"
+      },
+      {
+        "text": "Projects",
+        "link": "/views/projects/projects.html",
+        "icon": "reco-api"
+      },
+      {
+        "text": "About Me",
+        "link": "/views/aboutme/aboutme.html",
+        "icon": "reco-eye"
+      },
+      {
+        "text": "Cool Sites",
+        "link": "/views/coolestsite/Coolest Website.html",
+        "icon": "reco-suggestion"
+      },
+      {
+        "text": "MAT202",
+        "icon": "reco-document",
+        "items": [
+          {
+            "text": "TUT 1",
+            "link": "/views/MAT202/tut1.md",
+          },
+          {
+            "text": "TUT 2",
+            "link": "/views/MAT202/tut2.md",
+          },
+          {
+            "text": "TUT 3",
+            "link": "/views/MAT202/tut3.md",
+          },
+          {
+            "text": "TUT 4",
+            "link": "/views/MAT202/tut4.md",
+          },
+          {
+            "text": "TUT 5",
+            "link": "/views/MAT202/tut5.md",
+          },
+        ]
       },
       {
         "text": "Contact",
@@ -39,6 +75,16 @@ module.exports = {
             "text": "GitHub",
             "link": "https://github.com/BrianLi009",
             "icon": "reco-github"
+          },
+          {
+            "text": "LinedIn",
+            "link": "https://www.linkedin.com/in/zhengyu-brian-li-41840a16a/",
+            "icon": "reco-linkedin"
+          },
+          {
+            "text": "Book a Meeting",
+            "link": "https://calendly.com/brianli/30min",
+            "icon": "reco-tongzhi"
           }
         ]
       }
@@ -81,6 +127,20 @@ module.exports = {
       '@vuepress/google-analytics',
       {
         'ga': 'UA-129657379-2' // UA-129657379-2
+      }
+    ],
+    [
+      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      {
+        theme: ["wanko"],
+        clean: true,
+        modelStyle: {
+          position: "fixed",
+          left: "0px",
+          bottom: "0px",
+          opacity: "0.9",
+          zIndex: 99999
+        }
       }
     ]
   ],
