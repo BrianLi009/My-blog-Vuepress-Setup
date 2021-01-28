@@ -1,0 +1,10 @@
+---
+sidebar: auto
+title: MAT202 TUT7
+---
+
+I have attached one tutorial notes with high resolution, and one tutorial note with office hour questions.
+
+<iframe class="scribd_iframe_embed" title="tut higher res" src="https://www.scribd.com/embeds/482932921/content?start_page=1&view_mode=scroll&access_key=key-QrHo6vHBhsDB64PD1zeo" data-auto-height="true" data-aspect-ratio="0.5050391937290034" scrolling="no" width="100%" height="600" frameborder="0"></iframe><p  style="   margin: 12px auto 6px auto;   font-family: Helvetica,Arial,Sans-serif;   font-style: normal;   font-variant: normal;   font-weight: normal;   font-size: 14px;   line-height: normal;   font-size-adjust: none;   font-stretch: normal;   -x-system-font: none;   display: block;"   ><a title="View tut higher res on Scribd" href="https://www.scribd.com/document/482932921/tut-higher-res#from_embed"  style="text-decoration: underline;">tut higher res</a> by <a title="View Brian Li's profile on Scribd" href="https://www.scribd.com/user/514896959/Brian-Li#from_embed"  style="text-decoration: underline;">Brian Li</a></p>
+
+<iframe class="scribd_iframe_embed" title="tut with OH" src="https://www.scribd.com/embeds/482933207/content?start_page=1&view_mode=scroll&access_key=key-Mi50Wjk3dnvMe3VsAh8T" data-auto-height="true" data-aspect-ratio="0.5041922861934042" scrolling="no" width="100%" height="600" frameborder="0"></iframe><p  style="   margin: 12px auto 6px auto;   font-family: Helvetica,Arial,Sans-serif;   font-style: normal;   font-variant: normal;   font-weight: normal;   font-size: 14px;   line-height: normal;   font-size-adjust: none;   font-stretch: normal;   -x-system-font: none;   display: block;"   ><a title="View tut with OH on Scribd" href="https://www.scribd.com/document/482933207/tut-with-OH#from_embed"  style="text-decoration: underline;">tut with OH</a> by <a title="View Brian Li's profile on Scribd" href="https://www.scribd.com/user/514896959/Brian-Li#from_embed"  style="text-decoration: underline;">Brian Li</a></p>

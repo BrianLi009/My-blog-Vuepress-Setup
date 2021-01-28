@@ -65,6 +65,30 @@ module.exports = {
             "text": "TUT 5",
             "link": "/views/MAT202/tut5.md",
           },
+          {
+            "text": "TUT 6",
+            "link": "/views/MAT202/tut6.md",
+          },
+          {
+            "text": "TUT 7",
+            "link": "/views/MAT202/tut7.md",
+          },
+          {
+            "text": "TUT 8",
+            "link": "/views/MAT202/tut8.md",
+          },
+          {
+            "text": "TUT 9",
+            "link": "/views/MAT202/tut9.md",
+          },
+          {
+            "text": "TUT 10",
+            "link": "/views/MAT202/tut10.md",
+          },
+          {
+            "text": "TUT 11",
+            "link": "/views/MAT202/tut11.md",
+          },
         ]
       },
       {
